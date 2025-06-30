@@ -32,8 +32,6 @@ This project is structured in a clean and modular way, ideal for learning, perso
         └── utils.go             # Helper functions (JSON parsing, etc.)
 ```
 
-![Project Structure](./assets/project-structure.png)
-
 ---
 
 ## 🔌 MySQL Setup (READ THIS or you’ll rage 🚤)
@@ -91,8 +89,6 @@ Make sure:
 | DELETE | `/book/{bookId}` | Delete book by ID |
 
 All routes were tested and verified using **Postman** ✅
-
-![Postman Test Routes](./assets/postman-routes.png)
 
 ---
 
