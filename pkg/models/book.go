@@ -8,8 +8,8 @@ import (
 var db *gorm.DB
 
 type Book struct {
-	gorm.model
-	Name        string `gorm:""json:"name"`
+	gorm.Model
+	Name        string `"json:"name"`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
 }
@@ -23,8 +23,7 @@ func init() {
 //Models creation now!!
 
 func (b *Book) CreateBook() *Book {
-	db.NewRecord(b) // returns true if record is new
-	db.Create(&b)   // creates book
+	db.Create(&b) // creates book
 	return b
 }
 
@@ -42,6 +41,6 @@ func GetBookById(Id int64) (*Book, *gorm.DB) {
 
 func DeleteBook(Id int64) Book {
 	var book Book
-	db.Where("ID=?", ID).Delete(&book)
+	db.Where("ID=?", Id).Delete(&book)
 	return book
 }
