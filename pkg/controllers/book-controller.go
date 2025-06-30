@@ -8,8 +8,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/tf-vishal/Go-BookStore/pkg/models"
-	"github.com/tf-vishal/Go-Bookstore/pkg/models"
-	"github.com/tf-vishal/Go-Bookstore/pkg/utils"
+	"github.com/tf-vishal/Go-BookStore/pkg/utils"
 )
 
 var NewBook models.Book
